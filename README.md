@@ -1,2 +1,2 @@
 # pratik-vagyani
-Personal website
+Personal portfolio/website
