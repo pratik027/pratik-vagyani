@@ -134,7 +134,10 @@ background-color:#FFFFFF;
   height: 40px;
   width: 40px;
 }
-
+/*  */
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  filter: invert(100%);
+}
 
 /* Education Container---------------------------------- */
 .education-container{
