@@ -64,7 +64,7 @@ background-color:#FFFFFF;
 /*  Introduction Containers -----------------------------*/
 .intro-container{
   /* background-color: #A5FFD6; */
-  height: 55rem;
+  height: 50rem;
 }
 .intro-row{
   height: 30rem;
@@ -329,6 +329,11 @@ background-color: #FFFFFF;
     color: #3588FF;
     z-index: 2;
   }
+}
+@media (min-width: 1193px) {
+.contact-short{
+  margin: 1% 25%;
+}
 }
 /*
 color coding:
