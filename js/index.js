@@ -26,3 +26,4 @@ function beautifySkill(){
   }
 }
 beautifySkill();
+new WOW().init()

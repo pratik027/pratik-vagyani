@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <!-- bootstrap 4.3 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet"> -->
     <!-- style shits  -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
@@ -24,6 +25,7 @@
     <script>document.getElementsByTagName("html")[0].className += " js";</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
   </head>
   <body>
     <!-- Navigation Bar  -->
@@ -36,7 +38,7 @@
            <span class="navbar-toggler-icon"></span>
        </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link " href="#endorsement-section"><span class="item">Endorsement</span></a>
           </li>
@@ -87,13 +89,14 @@
               <div class="col  col-md-6 col-sm-12  profile-col">
                 <div class="profile-col">
                   <div class="headline">
-                    <span class="h2">Hi, I am</span><br>
+                    <span class="h2">Hello, I'm</span><br>
                     <span class="h1 name">Pratik Vagyani</span>
                   </div>
                   <div class="info">
-                    Experienced Software Engineer with a demonstrated history of working in the computer software industry.
-                    Skilled in Python, Java, Agile Methodologies, Big Data, Databases and NodeJs.
-                    Strong engineering professional with a Bachelor of Technology (BTech) focused in Computer Software and Information Technology from wce sangli. And 3+ years of experience @ Symantec.
+                    I'm masters CSE student at University at Buffalo, speciallized in building & designing exceptional, high quiality softwares.
+                    I enjoy building web, distributed and big data applications.
+                    <br>
+                    After my graduation, I joined engineering team at Symantec, where I work on a wide variety of interesting and meaningful projects on a daily basis.
                   </div>
                 </div>
               </div>
@@ -150,7 +153,7 @@
 
             <div class="col">
               <!-- UB Details -->
-              <div class="institute">
+              <div class="institute ">
                 <div class="institute-logo">
                     <img class="logo" src="img/UB_Primary_SUNY_mini.png" alt="Pratik Vagyani's Grad University">
                 </div>
@@ -374,19 +377,40 @@
             <div class="project-box d-flex align-items-end flex-column">
               <div class="project-title">Digital Certificate Classifier</div>
               <div class="project-text">
-                Designed & developed a cross-platform application to execute on Hadoop and AWS platform.Built oozie app with Hive & Spark to process 10TB data daily and predicting maliciousness of digital certificates. Developed Master-slave architecture on AWS using SQS, auto-scaling, EC2s to process digital certificates on slave nodes against automated tests in a distributed manner and validate its maliciousness. Used Kafka queues to publish results.
+                Designed & developed applications for Spark
+application to process millions of records & classify malicious certificates which
+saved 200 hrs/week of human work. Spark app reliably process 10TB data daily.
+Optimized spark queries upto 30% . Performed integration & unit tests. Used
+Kafka queues to publish results.
               </div>
               <div class="project-skill m-auto">Python, Java, Hadoop, Spark, Hive, Oozie, Data Analytics, AWS, SQS</div>
             </div>
           </div>
-
+          <div class="col col-sm-12 col-md-6 col-lg-4">
+            <div class="project-box d-flex align-items-end flex-column">
+              <div class="project-title">Signer Automation</div>
+              <div class="project-text">
+                Implemented Master-Slave architecture on AWS to automate signer processing at large scale. EC2 auto-scaling & SQS used to operate cost effectively (25%) . Developed Python scripts to update scanner and email daily stats. Performed additional role of scrum master for Agile team.
+              </div>
+              <div class="project-skill m-auto">Python, AWS, SQS, Kafka, Unit-test</div>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-md-6 col-lg-4">
+            <div class="project-box d-flex align-items-end flex-column">
+              <div class="project-title">ExtraShift</div>
+              <div class="project-text">
+                Developed a website where campus employers can post available shift and interested employees get notified. Distributed pub-sub architecture is build with a network of 4 dockers. 4 Instances communicated subscriptions and published messages over the network via socket programming. Used mySQLto backup subscriptions to avoid data loss incase of node failure.
+              </div>
+              <div class="project-skill m-auto">JavaScript, Python, Docker, Socket, flask, mySQL</div>
+            </div>
+          </div>
           <div class="col col-sm-12 col-md-6 col-lg-4">
             <div class="project-box d-flex align-items-end flex-column">
               <div class="project-title">Feed Efficacy</div>
               <div class="project-text">
                 Built a Django website to monitor malware sources and their efficacy stats. Developed Python modules to execute complex SQL queries on MS-SQL and Postgres DB and store result to local database so that web-portal can access data fast. Build oozie app using scoop to push daily data from Hadoop cluster to local DB.
               </div>
-              <div class="project-skill mt-auto">Python, Django, Oozie, Sqoop, Hive, PostgreSQL, MSsql</div>
+              <div class="project-skill mt-auto">Python, JavaScript, Django, Oozie, Sqoop, Hive, PostgreSQL, MSsql</div>
             </div>
           </div>
           <div class="col col-sm-12 col-md-6 col-lg-4">
@@ -395,7 +419,7 @@
               <div class="project-text">
                 Built a website to help travelers to visualize weather on trip route. AngularJS is used for user friendly front-end and Express & nodeJS for backend. Analyzed api calls and ways to reduce them. Google’s Map, Direction, Route APIs are used get route and cities on route as well as OpenWeatherMap api is used to gather weather information.
               </div>
-              <div class="project-skill m-auto">Angular, NodeJS, Express, Javascript, Google(Map/Direction/Route), OpenWeatherApi</div>
+              <div class="project-skill m-auto">JavaScript, Angular, NodeJS, Express, Google Api, OpenWeatherApi</div>
             </div>
           </div>
 
@@ -415,15 +439,6 @@
                 Trained agent Tom to catch Jerry in the game. Reinforcement learning is performed over grid-world environment. DQN and Deep Learning used to train model.
               </div>
               <div class="project-skill m-auto">Python, Tensorflow, Deep Learning</div>
-            </div>
-          </div>
-          <div class="col col-sm-12 col-md-6 col-lg-4">
-            <div class="project-box d-flex align-items-end flex-column">
-              <div class="project-title">ExtraShift</div>
-              <div class="project-text">
-                Developed a website where campus employers can post available shift and interested employees get notified. Distributed pub-sub architecture is build with a network of 4 dockers. 4 Instances communicated subscriptions and published messages over the network via socket programming. Used mySQLto backup subscriptions to avoid data loss incase of node failure.
-              </div>
-              <div class="project-skill m-auto">Python, Docker, Socket, flask, JavaScript, mySQL</div>
             </div>
           </div>
         </div>
