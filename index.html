@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet"> -->
     <!-- style shits  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <!-- scripts -->
@@ -66,7 +67,7 @@
     </div>
     <header id="page-top">
       <!-- Introduction container -->
-      <section class="intro-container container-fluid" >
+      <section class="intro-container container-fluid" data-aos="fade-up">
         <div class="ice-breaker">
           <div class="container">
             <div class="row intro-row">
@@ -109,10 +110,9 @@
     </header>
 
     <!-- Endorsement Section-->
-    <section id="endorsement-section" class="Endorsement-container container-fluid">
-      <div class="section-title">
-        <div class="nav-line"></div>
-          Endorsements
+    <section id="endorsement-section" class="Endorsement-container container-fluid" data-aos="fade-up">
+      <div class="section-title"><div class="nav-line"></div>
+      Endorsements
       </div>
 
       <div class="endorsement-dock">
@@ -141,7 +141,7 @@
     </section>
 
     <!-- Education container  -->
-    <section id="education" class="education-container container-fluid">
+    <section id="education" class="education-container container-fluid" data-aos="fade-up">
       <div class="section-title">
         <div class="nav-line"></div>
           Education
@@ -153,11 +153,11 @@
 
             <div class="col">
               <!-- UB Details -->
-              <div class="institute ">
+              <div class="institute" data-aos="zoom-in">
                 <div class="institute-logo">
                     <img class="logo" src="img/UB_Primary_SUNY_mini.png" alt="Pratik Vagyani's Grad University">
                 </div>
-                <div class="institute-name">University at Buffalo</div>
+                <div class="institute-name">University at Buffalo, SUNY</div>
                 <div class="degree">Masters of Science, Computer Science</div>
                 <div class="degree-period">August 2018 - December 2019</div>
                 <div class="degree-courses">
@@ -167,7 +167,7 @@
 
             <div class="col">
               <!-- WCE logo -->
-              <div class="institute">
+              <div class="institute" data-aos="zoom-in">
                 <div class="institute-logo">
                     <img class="logo" src="img/wce_mini.png" alt="Pratik Vagyani's UnderGrad University">
                 </div>
@@ -185,7 +185,7 @@
     </section>
 
     <!-- Skill container -->
-    <section id="skills" class="skill-container container-fluid">
+    <section id="skills" class="skill-container container-fluid" data-aos="fade-up">
       <div class="section-title">
         <div class="nav-line"></div>
           Skills
@@ -302,7 +302,7 @@
     </section>
     <!--Work container  -->
     <section id="work-experience" class="work-container container-fluid">
-      <div class="section-title">
+      <div class="section-title" data-aos="fade-up">
         <div class="nav-line"></div>
           Work Experience
       </div>
@@ -367,14 +367,14 @@
       </section> <!-- cd-timeline -->
     </section>
     <!-- Project container -->
-    <section id="projects" class="project-container container-fluid">
+    <section id="projects" class="project-container container-fluid" data-aos="fade-up">
       <div class="section-title"><div class="nav-line"></div>
           Projects       </div>
       <div class="container">
         <div class="row">
           <!-- Image Col Left-side -->
           <div class="col col-sm-12 col-md-6 col-lg-4">
-            <div class="project-box d-flex align-items-end flex-column">
+            <div class="project-box d-flex align-items-end flex-column" data-aos="fade-up">
               <div class="project-title">Digital Certificate Classifier</div>
               <div class="project-text">
                 Designed & developed applications for Spark
@@ -387,7 +387,7 @@ Kafka queues to publish results.
             </div>
           </div>
           <div class="col col-sm-12 col-md-6 col-lg-4">
-            <div class="project-box d-flex align-items-end flex-column">
+            <div class="project-box d-flex align-items-end flex-column" data-aos="fade-up">
               <div class="project-title">Signer Automation</div>
               <div class="project-text">
                 Implemented Master-Slave architecture on AWS to automate signer processing at large scale. EC2 auto-scaling & SQS used to operate cost effectively (25%) . Developed Python scripts to update scanner and email daily stats. Performed additional role of scrum master for Agile team.
@@ -396,7 +396,7 @@ Kafka queues to publish results.
             </div>
           </div>
           <div class="col col-sm-12 col-md-6 col-lg-4">
-            <div class="project-box d-flex align-items-end flex-column">
+            <div class="project-box d-flex align-items-end flex-column"  data-aos="fade-up">
               <div class="project-title">ExtraShift</div>
               <div class="project-text">
                 Developed a website where campus employers can post available shift and interested employees get notified. Distributed pub-sub architecture is build with a network of 4 dockers. 4 Instances communicated subscriptions and published messages over the network via socket programming. Used mySQLto backup subscriptions to avoid data loss incase of node failure.
@@ -405,7 +405,7 @@ Kafka queues to publish results.
             </div>
           </div>
           <div class="col col-sm-12 col-md-6 col-lg-4">
-            <div class="project-box d-flex align-items-end flex-column">
+            <div class="project-box d-flex align-items-end flex-column" data-aos="fade-up">
               <div class="project-title">Feed Efficacy</div>
               <div class="project-text">
                 Built a Django website to monitor malware sources and their efficacy stats. Developed Python modules to execute complex SQL queries on MS-SQL and Postgres DB and store result to local database so that web-portal can access data fast. Build oozie app using scoop to push daily data from Hadoop cluster to local DB.
@@ -414,7 +414,7 @@ Kafka queues to publish results.
             </div>
           </div>
           <div class="col col-sm-12 col-md-6 col-lg-4">
-            <div class="project-box d-flex align-items-end flex-column">
+            <div class="project-box d-flex align-items-end flex-column" data-aos="fade-up">
               <div class="project-title">WeatherOnMyTrip</div>
               <div class="project-text">
                 Built a website to help travelers to visualize weather on trip route. AngularJS is used for user friendly front-end and Express & nodeJS for backend. Analyzed api calls and ways to reduce them. Google’s Map, Direction, Route APIs are used get route and cities on route as well as OpenWeatherMap api is used to gather weather information.
@@ -424,7 +424,7 @@ Kafka queues to publish results.
           </div>
 
           <div class="col col-sm-12 col-md-6 col-lg-4">
-            <div class="project-box d-flex align-items-end flex-column">
+            <div class="project-box d-flex align-items-end flex-column" data-aos="fade-up">
               <div class="project-title">Folder Path Clustering</div>
               <div class="project-text">
                 Research and built app for classifying malicious folders, based on files it contains. Compressed 6 month data with bucketing, parquet/orc file formats upto 30% for faster and efficient data analytics. Performed debugging & testing of python, java & Hadoop(spark, hive, oozie) applications. Scheduled Oozie job to run apps on Hadoop. Performed additional role of scrum master for Agile team.
@@ -433,7 +433,7 @@ Kafka queues to publish results.
             </div>
           </div>
           <div class="col col-sm-12 col-md-6 col-lg-4">
-            <div class="project-box d-flex align-items-end flex-column">
+            <div class="project-box d-flex align-items-end flex-column" data-aos="fade-up">
               <div class="project-title">Tom & Jerry — Reinforcement Learning</div>
               <div class="project-text">
                 Trained agent Tom to catch Jerry in the game. Reinforcement learning is performed over grid-world environment. DQN and Deep Learning used to train model.
@@ -445,19 +445,19 @@ Kafka queues to publish results.
       </div>
     </section>
     <!-- achievement container -->
-    <section id="patent" class="achievement-container container-fluid">
+    <section id="patent" class="achievement-container container-fluid" data-aos="fade-up">
       <div class="section-title"><div class="nav-line"></div>
           Patent & Achievements
       </div>
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col" data-aos="zoom-out">
             <div class="award-title">Patent</div>
             <div class="content">
               Patent granted:<a href="https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=1F8E17FB9973D2FE581C5DBDA01EE463.wapp2nA?docId=US239905491&recNum=10529&office=&queryString=&prevFilter=&sortOption=Pub+Date+Desc&maxRec=74547219">US10250588</a>
               </br>System and Methods for Determining Reputation of Digital Certificates Signer</div>
           </div>
-          <div class="col">
+          <div class="col" data-aos="zoom-out">
             <div class="award-title">Awards</div>
             <div class="content">
               ● 2 awards of “Passion and Focus” for brillient work
@@ -468,7 +468,7 @@ Kafka queues to publish results.
 
             </div>
           </div>
-          <div class="col">
+          <div class="col" data-aos="zoom-out">
             <div class="award-title">Voluntary Services</div>
             <div class="content">
               Volunteered for various Community Services like donating books, arranging school kits at Symantec for various NGOs
@@ -480,7 +480,7 @@ Kafka queues to publish results.
     </section>
     <!-- contact container -->
     <section id="contacts" class="contact container-fluid">
-      <div class="section-title"><div class="nav-line"></div>
+      <div class="section-title" "><div class="nav-line"></div>
           Contact
       </div>
       <div class="container">
@@ -520,6 +520,13 @@ Kafka queues to publish results.
     <section class="footer contact">
       <strong>© 2019 Pratik Vagyani</strong>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:400,
+        duration:1000}
+      );
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Skillbar progress -->
     <script src="js/skill.bars.jquery.js"></script>

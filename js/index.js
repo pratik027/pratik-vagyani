@@ -16,7 +16,6 @@ function beautifySkill(){
     var skills = $nav[id].innerText.split(",");
     if(skills.length>0){
     var text="";
-    console.log(skills);
     for(skill=0;skill<skills.length;skill++)
     {
       text+='<div class="skill">'+skills[skill]+' </div>';
@@ -26,4 +25,3 @@ function beautifySkill(){
   }
 }
 beautifySkill();
-new WOW().init()
